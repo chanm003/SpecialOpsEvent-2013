@@ -28,7 +28,14 @@
         render: render
     }
 
+    function createCallToActionButtion() {
+        var container = $("<div></div>");
+        commonUI.renderWebPartCallToActionButtion(container, '/Lists/AirSupportRequests/NewForm.aspx?Source=' + document.location.href, "new air support request", "");
+        $("#mainContent").after(container);
+    }
+
     function render(data) {
+        createCallToActionButtion();
         renderMissionTrackerTable(data);
         
         renderTabs();

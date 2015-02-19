@@ -135,5 +135,9 @@
     <ProjectItemFile Source="css\font-awesome-4.2.0\scss\_stacked.scss" Target="WebPageAssets\css\font-awesome-4.2.0\scss\" Type="ElementFile" />
     <ProjectItemFile Source="css\font-awesome-4.2.0\scss\_variables.scss" Target="WebPageAssets\css\font-awesome-4.2.0\scss\" Type="ElementFile" />
     <ProjectItemFile Source="css\font-awesome-4.2.0\scss\font-awesome.scss" Target="WebPageAssets\css\font-awesome-4.2.0\scss\" Type="ElementFile" />
+    <ProjectItemFile Source="js\app\editExerciseNav.js" Target="WebPageAssets\js\app\" Type="ElementFile" />
+    <ProjectItemFile Source="js\lib\verticalPureCssMenu\r_arrow.gif" Target="WebPageAssets\js\lib\verticalPureCssMenu\" Type="ElementFile" />
+    <ProjectItemFile Source="js\lib\verticalPureCssMenu\style.css" Target="WebPageAssets\js\lib\verticalPureCssMenu\" Type="ElementFile" />
+    <ProjectItemFile Source="js\app\displayTemplate-actionsButton.js" Target="WebPageAssets\js\app\" Type="ElementFile" />
   </Files>
 </ProjectItem>

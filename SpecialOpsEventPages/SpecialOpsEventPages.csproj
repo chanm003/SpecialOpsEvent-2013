@@ -177,6 +177,8 @@
     <Content Include="Application\WebPageAssets\js\app\comms.js" />
     <Content Include="Application\WebPageAssets\js\app\commsTables.js" />
     <Content Include="Application\WebPageAssets\js\app\datacontext.js" />
+    <Content Include="Application\WebPageAssets\js\app\displayTemplate-actionsButton.js" />
+    <Content Include="Application\WebPageAssets\js\app\editExerciseNav.js" />
     <Content Include="Application\WebPageAssets\js\app\editGlobalNav.js" />
     <Content Include="Application\WebPageAssets\js\app\helpDesk.js" />
     <Content Include="Application\WebPageAssets\js\app\masterPageUI.js" />
@@ -251,6 +253,8 @@
     <Content Include="Application\WebPageAssets\js\lib\query-string.js" />
     <Content Include="Application\WebPageAssets\js\lib\require.js" />
     <Content Include="Application\WebPageAssets\js\lib\underscore.min.js" />
+    <Content Include="Application\WebPageAssets\js\lib\verticalPureCssMenu\r_arrow.gif" />
+    <Content Include="Application\WebPageAssets\js\lib\verticalPureCssMenu\style.css" />
     <Content Include="Application\WebPageAssets\js\lib\vex\css\vex-theme-bottom-right-corner.css" />
     <Content Include="Application\WebPageAssets\js\lib\vex\css\vex-theme-default.css" />
     <Content Include="Application\WebPageAssets\js\lib\vex\css\vex-theme-flat-attack.css" />
@@ -270,6 +274,7 @@
     <Content Include="Application\WebPartPages\announce.aspx" />
     <Content Include="Application\WebPartPages\asr.aspx" />
     <Content Include="Application\WebPartPages\comms.aspx" />
+    <Content Include="Application\WebPartPages\editExerciseNav.aspx" />
     <Content Include="Application\WebPartPages\projectionScrollable.aspx" />
     <Content Include="Application\WebPartPages\cub.aspx" />
     <Content Include="Application\WebPartPages\editCustomNav.aspx" />

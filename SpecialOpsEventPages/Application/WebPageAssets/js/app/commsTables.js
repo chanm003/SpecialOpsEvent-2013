@@ -162,7 +162,7 @@
     function renderCommsTable(container, data, editUrl) {
         var commStatusTemplate = handlebars.compile(commStatusHtml),
 			commStatusTable = commStatusTemplate({
-                hasNoData: (data.length === 0),
+			    hasNoData: (data.length === 0),
 			    statuses: data
 			});
 
@@ -172,7 +172,7 @@
             table.click(function () {
                 window.location.href = _spPageContextInfo.webServerRelativeUrl + editUrl;
             });
-            table.css({"cursor":"pointer"});
+            table.css({ "cursor": "pointer" });
         }
 
         container.append(table);

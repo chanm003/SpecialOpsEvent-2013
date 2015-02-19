@@ -21,5 +21,6 @@
     <ProjectItemFile Source="airAssets.aspx" Target="WebPartPages\" Type="ElementFile" />
     <ProjectItemFile Source="cub.aspx" Target="WebPartPages\" Type="ElementFile" />
     <ProjectItemFile Source="projectionScrollable.aspx" Target="WebPartPages\" Type="ElementFile" />
+    <ProjectItemFile Source="editExerciseNav.aspx" Target="WebPartPages\" Type="ElementFile" />
   </Files>
 </ProjectItem>

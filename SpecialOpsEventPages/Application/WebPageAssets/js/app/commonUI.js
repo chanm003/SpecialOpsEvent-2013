@@ -10,6 +10,7 @@
         getActiveJqueryTabFromUrlHash: getActiveJqueryTabFromUrlHash,
         isSP2010: isSP2010,
         isSP2013: isSP2013,
+        renderWebPartCallToActionButtion: renderWebPartCallToActionButtion,
         renderWebPartHeaderTag: renderWebPartHeaderTag,
         showSuccessNotification: showSuccessNotification,
         showErrorNotification: showErrorNotification
@@ -100,6 +101,31 @@
             </div>\
         </div>';
 
+    var sp2013Button =
+        '<table dir="none" cellpadding="0" cellspacing="0" border="0">\
+            <tbody>\
+                <tr>\
+                    <td class="ms-list-addnew ms-textLarge ms-soften">\
+                        <a class="ms-heroCommandLink" href="{{url}}" target="_self">\
+                            <span class="ms-list-addnew-imgSpan16"><img src="/_layouts/15/images/spcommon.png?rev=23" class="ms-list-addnew-img16"></span>\
+                            <span>{{urlText}}</span>\
+                        </a> {{urlMutedText}}\
+                    </td>\
+                </tr>\
+            </tbody>\
+        </table>';
+
+    function renderWebPartCallToActionButtion(container, webRelativeUrl, urlText, urlMutedText) {
+        var hbTemplate = handlebars.compile(sp2013Button),
+			btn = hbTemplate({
+			    url: requirejs.spWebURL + webRelativeUrl,
+			    urlText: urlText,
+			    urlMutedText: urlMutedText
+			});
+
+        container.append($(btn));
+    }
+
     function renderWebPartHeaderTag(container, webRelativeUrl, urlText) {
 
         var self = this,
@@ -128,18 +154,28 @@
     }
 
     function showErrorNotification(title, msg) {
-        //var statusId = SP.UI.Status.addStatus(STSHtmlEncode(msg));
+        //var statusId = SP.UI.Status.addStatus(msg);    
         //SP.UI.Status.setStatusPriColor(statusId, 'red');
 
-        var value = SP.UI.Notify.addNotification(STSHtmlEncode(title + ". " + msg), false);
+        // create sharepoint notification 
+        var notificationData = new SPStatusNotificationData("", STSHtmlEncode(msg), '_layouts/15/images/gbmrk.gif', null);
+        var notification = new SPNotification(SPNotifications.ContainerID.Status, STSHtmlEncode(title), false, null, null, notificationData);
+
+        // show sharepoint notification tile 
+        notification.Show(false);
 
     }
 
     function showSuccessNotification(title, msg) {
-        //var statusId = SP.UI.Status.addStatus(STSHtmlEncode(msg));
+        //var statusId = SP.UI.Status.addStatus(msg);    
         //SP.UI.Status.setStatusPriColor(statusId, 'green');
 
-        var value = SP.UI.Notify.addNotification(STSHtmlEncode(title + ". " + msg), false);
+        // create sharepoint notification 
+        var notificationData = new SPStatusNotificationData("", STSHtmlEncode(msg), '_layouts/15/images/check2.gif', null);
+        var notification = new SPNotification(SPNotifications.ContainerID.Status, STSHtmlEncode(title), false, null, null, notificationData);
+
+        // show sharepoint notification tile 
+        notification.Show(false);
     }
 
     return exposedAPI;

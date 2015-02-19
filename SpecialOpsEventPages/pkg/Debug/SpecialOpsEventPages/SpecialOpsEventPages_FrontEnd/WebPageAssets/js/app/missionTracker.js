@@ -78,7 +78,15 @@
         return conops;
     }
 
+    function createCallToActionButtion() {
+        var container = $("<div></div>");
+        commonUI.renderWebPartCallToActionButtion(container, '/Lists/MissionTracker/NewForm.aspx?Source=' + document.location.href, "new mission", "");
+        $("#mainContent").after(container);
+    }
+
     function render(data) {
+        createCallToActionButtion();
+
         var reviewers = ['J35', 'J39', 'J2', 'MED', 'JAG', 'SOATG'];
         data.conops = filterOutConops(data.missionDocs, data.conopChops, reviewers);
         renderConopChopsTable(data.conops, data.conopChops, reviewers);

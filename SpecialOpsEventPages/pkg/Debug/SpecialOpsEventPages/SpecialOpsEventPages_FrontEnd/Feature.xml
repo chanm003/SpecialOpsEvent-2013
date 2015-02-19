@@ -135,6 +135,10 @@
     <ElementFile Location="WebPageAssets\css\font-awesome-4.2.0\scss\_stacked.scss" />
     <ElementFile Location="WebPageAssets\css\font-awesome-4.2.0\scss\_variables.scss" />
     <ElementFile Location="WebPageAssets\css\font-awesome-4.2.0\scss\font-awesome.scss" />
+    <ElementFile Location="WebPageAssets\js\app\editExerciseNav.js" />
+    <ElementFile Location="WebPageAssets\js\lib\verticalPureCssMenu\r_arrow.gif" />
+    <ElementFile Location="WebPageAssets\js\lib\verticalPureCssMenu\style.css" />
+    <ElementFile Location="WebPageAssets\js\app\displayTemplate-actionsButton.js" />
     <ElementManifest Location="WebPartPages\Elements.xml" />
     <ElementFile Location="WebPartPages\announce.aspx" />
     <ElementFile Location="WebPartPages\asr.aspx" />
@@ -155,6 +159,7 @@
     <ElementFile Location="WebPartPages\airAssets.aspx" />
     <ElementFile Location="WebPartPages\cub.aspx" />
     <ElementFile Location="WebPartPages\projectionScrollable.aspx" />
+    <ElementFile Location="WebPartPages\editExerciseNav.aspx" />
     <ElementManifest Location="MasterPages\Elements.xml" />
     <ElementFile Location="MasterPages\specOpsEvent-seattle.master" />
     <ElementManifest Location="SpreadsheetsForExcelWebParts\Elements.xml" />

@@ -1,0 +1,93 @@
+﻿/*PREFER TO USE OPACITY with RGBA of 0.498039, ASK KEN*/
+
+.ms-core-sideNavBox-removeLeftMargin {
+    display:none;
+}
+
+#exerciseSiteMenu{
+    margin: 0 0 20px 0;
+}
+#exerciseSiteMenu ul {
+    padding: 0;
+    list-style: none;
+    width: 180px; /* Width of Menu Items */
+    border-bottom: 1px solid #ccc;
+}
+
+#exerciseSiteMenu ul li {
+    position: relative;
+     z-index: 1000 !important;
+}
+
+
+#exerciseSiteMenu li ul {
+    position: absolute;
+    left: 179px; /*Set 1px less than menu width */
+    top: 0;
+    display: block;
+}
+
+#exerciseSiteMenu li:hover ul {
+    display: block;
+}
+
+#exerciseSiteMenu li:hover > ul {
+    visibility: visible;
+}
+
+#exerciseSiteMenu ul ul {
+    visibility: hidden;
+}
+
+
+/* Fix IE. Hide from IE Mac \*/
+* html #exerciseSiteMenu ul li {
+    float: left;
+    height: 1%;
+}
+
+* html #exerciseSiteMenu ul li a {
+    height: 1%;
+}
+/* Fix IE: End */
+
+
+#exerciseSiteMenu ul, li {
+    margin: 0 0 0 0;
+}
+
+/* Styles for Menu Items */
+#exerciseSiteMenu ul a {
+    display: block;
+    text-decoration: none;
+    color: #777;
+    background: #fff;
+    /* IE6 Bug */ padding: 5px;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+}
+
+/* Hover Styles */
+#exerciseSiteMenu ul a:hover {
+    background: rgba(205, 230, 247,1);
+}
+
+/* Sub Menu Styles */
+#exerciseSiteMenu li ul a {
+    text-decoration: none;
+    /* IE6 Bug */ padding: 5px;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+}
+/* Sub Menu Hover Styles */
+#exerciseSiteMenu li ul a:hover {
+    background: rgba(205, 230, 247,1);
+}
+
+/* Icon Styles */
+#exerciseSiteMenu ul a.submenu {
+    background: #fff url("r_arrow.gif") no-repeat right;
+}
+#exerciseSiteMenu ul a.submenu:hover {
+    background: rgba(205, 230, 247,1) url("r_arrow.gif") no-repeat right;
+}

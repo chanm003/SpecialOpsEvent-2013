@@ -4,7 +4,7 @@
 <%@ Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
 <head>
-<link rel="stylesheet" type="text/css" href="/_layouts/1033/styles/Themable/corev4.css?rev=p63%2BuzTeSJc22nVGNZ5zwg%3D%3D"/>
+<link rel="stylesheet" type="text/css" href="/_layouts/15/1033/styles/Themable/corev15.css?rev=ox%2BqLd6WTqhn6d%2FMqf2BMw%3D%3D"/>
 <link rel="stylesheet" href="css/style.css" type="text/css" />
 <style type="text/css">
 	#hdWrap {
@@ -21,10 +21,10 @@
 }
 </style>
 </head>
-<body>
+<body style="overflow: scroll !important">
 
 <form id="form1" runat="server">
-	<div id="hdWrap">
+    <div id="hdWrap">
 		<div id="hd">
 <table style="width:100%;margin:0;padding:0" cellpadding="0" cellspacing="0">
 	<tr>
@@ -42,8 +42,8 @@
 </table>
 	</div>
 </div>
-
-<div class="appContainer" style="margin-top:40px;"></div>
+    <div class="appContainer" style="margin-top:40px;"></div>
+                                    
 </form>
 <script src="/_layouts/1033/init.js"></script>
     <script src="/_layouts/MicrosoftAjax.js"></script>

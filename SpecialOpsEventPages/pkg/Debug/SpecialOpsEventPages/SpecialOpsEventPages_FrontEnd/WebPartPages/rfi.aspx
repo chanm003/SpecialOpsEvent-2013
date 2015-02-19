@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~masterurl/default.master" Inherits="Microsoft.SharePoint.WebPartPages.WebPartPage,Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+﻿<%@ Page Language="C#" MasterPageFile="~masterurl/default.master" Inherits="Microsoft.SharePoint.WebPartPages.WebPartPage,Microsoft.SharePoint,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" %>
 
 <%@ Register TagPrefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Register TagPrefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
@@ -13,7 +13,7 @@
 </asp:Content>
 <asp:Content ContentPlaceHolderId="PlaceHolderAdditionalPageHead" runat="server">
     <style type="text/css">
-        #s4-leftpanel, #sideNavBox {
+        #s4-leftpanel, .ms-core-sideNavBox-removeLeftMargin {
             display: none;
         }
 
@@ -21,28 +21,12 @@
             margin-left: 0px;
         }
 
-        #contentBox {
+        #contentBox-WhenNoLeftMenu {
             margin-left: 40px;
         }
     </style>
 </asp:Content>
 <asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">
-    <table width="100%" cellpadding="0" cellspacing="0" border="0">
-        <tbody>
-            <tr>
-                <td colspan="2" class="ms-partline"><img src="/_layouts/images/blank.gif" width="1" height="1" alt=""></td>
-            </tr>
-            <tr>
-                <td class="ms-addnew" style="padding-bottom: 3px">
-                    <span style="height:10px;width:10px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust"><img src="/_layouts/images/fgimg.png" alt="" style="left:-0px !important;top:-128px !important;position:absolute;"></span>&nbsp;
-                    <a id="lnkAddNew" class="ms-addnew" >Add a new RFI</a>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="/_layouts/images/blank.gif" width="1" height="5" alt=""></td>
-            </tr>
-        </tbody>
-    </table>
     <table width="100%" border="0" cellpadding="0" cellspacing="0" style="padding:5px 10px 10px 10px;">
         <tr>
             <td valign="top">
@@ -90,10 +74,6 @@
         ExecuteOrDelayUntilScriptLoaded(function () {
             require(['js/common'], function (common) { 
                 require(['app/rfi'], function (UI) {
-
-                    var lnkAddNewUrl = '../Lists/Rfi/NewForm.aspx?Source=' + _spPageContextInfo.webServerRelativeUrl + "/app/rfi.aspx";
-                    $("#lnkAddNew").attr("href", lnkAddNewUrl);
-
                     UI.render();
                 });
             });

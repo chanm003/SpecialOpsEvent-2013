@@ -12,8 +12,16 @@
     var exposedAPI = {
         render: render
     }
+    
+    function createCallToActionButtion() {
+        var container = $("<div></div>");
+        commonUI.renderWebPartCallToActionButtion(container, '/Lists/HelpDesk/NewForm.aspx?Source=' + document.location.href, "new help desk ticket", "");
+        $("#mainContent").after(container);
+    }
 
     function render(allTickets) {
+        createCallToActionButtion();
+
         //help desk open tickets
         var openHelpDeskTickets = _.filter(allTickets, function (ticket) {
             return ticket.requestType !== 'Portal Development/KM' &&

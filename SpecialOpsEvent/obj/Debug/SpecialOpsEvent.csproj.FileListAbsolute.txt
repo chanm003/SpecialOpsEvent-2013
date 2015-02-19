@@ -8,3 +8,8 @@ C:\Users\mike.chan.adm\Downloads\SpecialOpsEvent-master\SpecialOpsEvent-master\S
 C:\Users\mike.chan.adm\Downloads\SpecialOpsEvent-master\SpecialOpsEvent-master\SpecialOpsEvent\obj\Debug\SpecialOpsEvent.csprojResolveAssemblyReference.cache
 C:\Users\mike.chan.adm\Downloads\SpecialOpsEvent-master\SpecialOpsEvent-master\SpecialOpsEvent\obj\Debug\SpecialOpsEvent.dll
 C:\Users\mike.chan.adm\Downloads\SpecialOpsEvent-master\SpecialOpsEvent-master\SpecialOpsEvent\obj\Debug\SpecialOpsEvent.pdb
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEvent\bin\Debug\SpecialOpsEvent.dll
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEvent\bin\Debug\SpecialOpsEvent.pdb
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEvent\obj\Debug\SpecialOpsEvent.csprojResolveAssemblyReference.cache
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEvent\obj\Debug\SpecialOpsEvent.dll
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEvent\obj\Debug\SpecialOpsEvent.pdb

@@ -134,5 +134,9 @@
 <File Type="GhostableInLibrary" Path="WebPageAssets\css\font-awesome-4.2.0\scss\_stacked.scss" Url="app/css/font-awesome-4.2.0/scss/_stacked.scss" />
 <File Type="GhostableInLibrary" Path="WebPageAssets\css\font-awesome-4.2.0\scss\_variables.scss" Url="app/css/font-awesome-4.2.0/scss/_variables.scss" />
 <File Type="GhostableInLibrary" Path="WebPageAssets\css\font-awesome-4.2.0\scss\font-awesome.scss" Url="app/css/font-awesome-4.2.0/scss/font-awesome.scss" />
-</Module>
+    <File Type="GhostableInLibrary" Path="WebPageAssets\js\app\editExerciseNav.js" Url="app/js/app/editExerciseNav.js" />
+    <File Type="GhostableInLibrary" Path="WebPageAssets\js\lib\verticalPureCssMenu\r_arrow.gif" Url="app/js/lib/verticalPureCssMenu/r_arrow.gif" />
+    <File Type="GhostableInLibrary" Path="WebPageAssets\js\lib\verticalPureCssMenu\style.css" Url="app/js/lib/verticalPureCssMenu/style.css" />
+    <File Type="GhostableInLibrary" Path="WebPageAssets\js\app\displayTemplate-actionsButton.js" Url="app/js/app/displayTemplate-actionsButton.js" />
+  </Module>
 </Elements>

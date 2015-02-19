@@ -119,17 +119,6 @@
             targets: 3
         };
 
-        //Template
-        var html =
-            "<div class='appPart'>\
-                <h3 style='text-align:justify;' class='ms-standardheader ms-WPTitle'>\
-    		        <a href='"+ requirejs.spWebURL + "/Lists/ExerciseCalendar'>\
-    		            <nobr><span>Battle Rhythm (Next 24 Hours)</span><span></span></nobr>\
-    		         </a>\
-    	        </h3>\
-    	        <table id='tblBattleRhythm' cellpadding='0' cellspacing='0' border='0' class='hover cell-border' width='100%'></table>\
-            </div>";
-
         var dtSource = _.map(data, function (item, index) {
             var strArr = [];
 
@@ -141,7 +130,8 @@
             return strArr;
         });
 
-        container.append($(html));
+        commonUI.renderWebPartHeaderTag(container, requirejs.spWebURL + "/Lists/ExerciseCalendar", "Battle Rhythm (Next 24 Hours)");
+        container.append($("<table id='tblBattleRhythm' cellpadding='0' cellspacing='0' border='0' class='hover row-border' width='100%'></table>"));
 
         $("#tblBattleRhythm").dataTable({
             paging: false,
@@ -187,17 +177,6 @@
             targets: 2
         };
 
-        //Template
-        var html =
-            "<div class='appPart'>\
-                <h3 style='text-align:justify;' class='ms-standardheader ms-WPTitle'>\
-    		        <a href='"+ requirejs.spWebURL + "/Lists/CCIR'>\
-    		            <nobr><span>CCIR</span><span></span></nobr>\
-    		         </a>\
-    	        </h3>\
-    	        <table id='tblCCIR' cellpadding='0' cellspacing='0' border='0' class='hover row-border' width='100%'></table>\
-            </div>";
-
         var dtSource = _.map(data, function (item, index) {
             var strArr = [];
 
@@ -210,7 +189,9 @@
             return strArr;
         });
 
-        container.append($(html));
+        commonUI.renderWebPartHeaderTag(container, requirejs.spWebURL + "/Lists/CCIR", "CCIR");
+        container.append($("<table id='tblCCIR' cellpadding='0' cellspacing='0' border='0' class='hover row-border' width='100%'></table>"));
+
 
         $("#tblCCIR").dataTable({
             paging: false,
@@ -233,16 +214,6 @@
             { title: "Initials", width: "1%" }
         ];
 
-        //Template
-        var html =
-            "<div class='appPart'>\
-                <h3 style='text-align:justify;' class='ms-standardheader ms-WPTitle'>\
-    		        <a href='"+ requirejs.spWebURL + "/Lists/MessageTraffic'>\
-    		            <nobr><span>"+ headingName + "</span><span></span></nobr>\
-    		         </a>\
-    	        </h3>\
-    	        <table id='"+ tableID + "' cellpadding='0' cellspacing='0' border='0' class='hover cell-border' width='100%'></table>\
-            </div>";
 
         var dtSource = _.map(data, function (item, index) {
             var strArr = [];
@@ -255,7 +226,9 @@
             return strArr;
         });
 
-        container.append($(html));
+        commonUI.renderWebPartHeaderTag(container, requirejs.spWebURL + "/Lists/MessageTraffic", headingName);
+        container.append($("<table id='" + tableID + "' cellpadding='0' cellspacing='0' border='0' class='hover row-border' width='100%'></table>"));
+
 
         $("#" + tableID).dataTable({
             paging: true,
@@ -281,16 +254,6 @@
             { title: "Comments" }
         ];
 
-        //Template
-        var html =
-            "<div class='appPart'>\
-                <h3 style='text-align:justify;' class='ms-standardheader ms-WPTitle'>\
-    		        <a href='"+ requirejs.spWebURL + "/Lists/MissionTracker'>\
-    		            <nobr><span>Mission Tracker</span><span></span></nobr>\
-    		         </a>\
-    	        </h3>\
-    	        <table id='tblMissionTracker' cellpadding='0' cellspacing='0' border='0' class='hover cell-border' width='100%'></table>\
-            </div>";
 
         var dtSource = _.map(data, function (item, index) {
             var strArr = [];
@@ -310,7 +273,9 @@
             return strArr;
         });
 
-        container.append($(html));
+        commonUI.renderWebPartHeaderTag(container, requirejs.spWebURL + "/Lists/MissionTracker", "Mission Tracker");
+        container.append($("<table id='tblMissionTracker' cellpadding='0' cellspacing='0' border='0' class='hover row-border' width='100%'></table>"));
+
 
         $("#tblMissionTracker").dataTable({
             paging: false,
@@ -334,16 +299,6 @@
             { title: "Date Opened" }
         ];
 
-        //Template
-        var html =
-            "<div class='appPart'>\
-                <h3 style='text-align:justify;' class='ms-standardheader ms-WPTitle'>\
-    		        <a href='"+ requirejs.spWebURL + "/Lists/Rfi'>\
-    		            <nobr><span>Open Collection Requirements</span><span></span></nobr>\
-    		         </a>\
-    	        </h3>\
-    	        <table id='tblRfi' cellpadding='0' cellspacing='0' border='0' class='hover cell-border' width='100%'></table>\
-            </div>";
 
         var dtSource = _.map(data, function (item, index) {
             var strArr = [];
@@ -361,7 +316,9 @@
             return strArr;
         });
 
-        container.append($(html));
+        commonUI.renderWebPartHeaderTag(container, requirejs.spWebURL + "/Lists/RFI", "Open Collection Requirements");
+        container.append($("<table id='tblRfi' cellpadding='0' cellspacing='0' border='0' class='hover row-border' width='100%'></table>"));
+
 
         $("#tblRfi").dataTable({
             paging: true,
@@ -384,16 +341,6 @@
             { title: "Initials", width: "1%" }
         ];
 
-        //Template
-        var html =
-            "<div class='appPart'>\
-                <h3 style='text-align:justify;' class='ms-standardheader ms-WPTitle'>\
-    		        <a href='"+ requirejs.spWebURL + "/Lists/WatchLogSocc'>\
-    		            <nobr><span>Watch Log</span><span></span></nobr>\
-    		         </a>\
-    	        </h3>\
-    	        <table id='tblWatchLog' cellpadding='0' cellspacing='0' border='0' class='hover cell-border' width='100%'></table>\
-            </div>";
 
         var dtSource = _.map(data, function (item, index) {
             var strArr = [];
@@ -408,7 +355,9 @@
             return strArr;
         });
 
-        container.append($(html));
+        commonUI.renderWebPartHeaderTag(container, requirejs.spWebURL + "/Lists/WatchLogSocc", "Watch Log");
+        container.append($("<table id='tblWatchLog' cellpadding='0' cellspacing='0' border='0' class='hover row-border' width='100%'></table>"));
+
 
         $("#tblWatchLog").dataTable({
             paging: true,
