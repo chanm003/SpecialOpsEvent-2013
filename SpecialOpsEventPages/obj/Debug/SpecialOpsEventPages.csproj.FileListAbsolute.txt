@@ -1,0 +1,10 @@
+c:\users\mike.chan.adm\documents\visual studio 2012\Projects\SpecialOpsEvent\SpecialOpsEventPages\bin\Debug\SpecialOpsEventPages.dll
+c:\users\mike.chan.adm\documents\visual studio 2012\Projects\SpecialOpsEvent\SpecialOpsEventPages\bin\Debug\SpecialOpsEventPages.pdb
+c:\users\mike.chan.adm\documents\visual studio 2012\Projects\SpecialOpsEvent\SpecialOpsEventPages\obj\Debug\SpecialOpsEventPages.dll
+c:\users\mike.chan.adm\documents\visual studio 2012\Projects\SpecialOpsEvent\SpecialOpsEventPages\obj\Debug\SpecialOpsEventPages.pdb
+C:\Users\mike.chan.adm\Documents\Visual Studio 2012\Projects\SpecialOpsEvent\SpecialOpsEventPages\obj\Debug\SpecialOpsEventPages.csprojResolveAssemblyReference.cache
+C:\Users\mike.chan.adm\Downloads\SpecialOpsEvent-master\SpecialOpsEvent-master\SpecialOpsEventPages\bin\Debug\SpecialOpsEventPages.dll
+C:\Users\mike.chan.adm\Downloads\SpecialOpsEvent-master\SpecialOpsEvent-master\SpecialOpsEventPages\bin\Debug\SpecialOpsEventPages.pdb
+C:\Users\mike.chan.adm\Downloads\SpecialOpsEvent-master\SpecialOpsEvent-master\SpecialOpsEventPages\obj\Debug\SpecialOpsEventPages.csprojResolveAssemblyReference.cache
+C:\Users\mike.chan.adm\Downloads\SpecialOpsEvent-master\SpecialOpsEvent-master\SpecialOpsEventPages\obj\Debug\SpecialOpsEventPages.dll
+C:\Users\mike.chan.adm\Downloads\SpecialOpsEvent-master\SpecialOpsEvent-master\SpecialOpsEventPages\obj\Debug\SpecialOpsEventPages.pdb
