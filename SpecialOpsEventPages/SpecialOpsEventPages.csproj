@@ -1,39 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{70F9621D-9BCD-4425-9151-45CDC1C092A0}</ProjectGuid>
+    <ProjectGuid>{96ACEE30-EA35-49D8-B554-8FDA3C5A8737}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SpecialOpsEventPages</RootNamespace>
     <AssemblyName>SpecialOpsEventPages</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectMode>SharePointCustomization</ProjectMode>
-    <TargetOfficeVersion>15.0</TargetOfficeVersion>
-    <FileUpgradeFlags>
-    </FileUpgradeFlags>
-    <UpgradeBackupLocation>
-    </UpgradeBackupLocation>
-    <OldToolsVersion>4.0</OldToolsVersion>
-    <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -61,18 +40,25 @@
     <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.SharePoint.WorkflowActions, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Activities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.DesignTime.Activities, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.Activities" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Features\FrontEnd\FrontEnd.EventReceiver.cs">
-      <DependentUpon>FrontEnd.feature</DependentUpon>
+    <Compile Include="Features\Pages\Pages.EventReceiver.cs">
+      <DependentUpon>Pages.feature</DependentUpon>
     </Compile>
     <Compile Include="ItemEventReceivers\DocumentEventReceiver\DocumentEventReceiver.cs" />
     <Compile Include="ItemEventReceivers\HelpDeskTicketEventReceiver\HelpDeskTicketEventReceiver.cs" />
@@ -113,54 +99,73 @@
     <None Include="Application\WebPageAssets\css\font-awesome-4.2.0\scss\_variables.scss" />
     <None Include="Application\WebPageAssets\js\lib\datatables\images\Sorting icons.psd" />
     <None Include="Application\WebPageAssets\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{4144946d-d931-44c9-99c1-9be84c743c65}</SharePointProjectItemId>
+      <SharePointProjectItemId>{501136e7-ee4b-420f-881c-e3f88fdd9bca}</SharePointProjectItemId>
     </None>
     <None Include="Application\WebPartPages\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{75b2a0d1-3d1e-4005-a2a5-1872440ae5d6}</SharePointProjectItemId>
+      <SharePointProjectItemId>{6ed46e38-041a-4cd3-bdc9-dd2f02bef50d}</SharePointProjectItemId>
     </None>
     <None Include="CustomActions\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{579c7227-6640-4a7f-8acc-bb5c0ca1cfe0}</SharePointProjectItemId>
+      <SharePointProjectItemId>{3d7c8d5b-ea82-47c4-b3a9-4a784a901044}</SharePointProjectItemId>
     </None>
     <None Include="CustomListForms\CustomFormsForASR\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{bf041737-d7ce-4ed1-a77f-e131b45d8677}</SharePointProjectItemId>
+      <SharePointProjectItemId>{97873024-0f74-4e95-97b9-11ddac094bfa}</SharePointProjectItemId>
     </None>
     <None Include="CustomListForms\CustomFormsForRFI\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{d7ff8284-e0f3-433f-909c-81bad8db7466}</SharePointProjectItemId>
+      <SharePointProjectItemId>{bee4e628-252f-47e3-89ae-1b409d0d0cc9}</SharePointProjectItemId>
     </None>
-    <None Include="Features\FrontEnd\FrontEnd.feature">
-      <FeatureId>{1ffb6c44-a2c8-42b4-ba66-c409f8306f98}</FeatureId>
+    <None Include="Features\Pages\Pages.feature">
+      <FeatureId>{9431acb6-3600-4ac4-8962-bd02f65a269a}</FeatureId>
+    </None>
+    <None Include="Features\MailMessaging\MailMessaging.feature">
+      <FeatureId>{84311208-4761-43c4-829c-990bbf85aeed}</FeatureId>
     </None>
     <None Include="ItemEventReceivers\DocumentEventReceiver\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{427209dc-7d1c-4eb1-aff5-50274aefc4f8}</SharePointProjectItemId>
+      <SharePointProjectItemId>{e191ff7a-b4c0-4eeb-afb0-fafb4fb76323}</SharePointProjectItemId>
     </None>
     <None Include="ItemEventReceivers\HelpDeskTicketEventReceiver\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{9c4cba7b-a891-474b-9f03-8a6abde13647}</SharePointProjectItemId>
+      <SharePointProjectItemId>{b44041c5-fc12-4af8-9904-cadef4158e18}</SharePointProjectItemId>
     </None>
     <None Include="ItemEventReceivers\RfiItemEventReceiver\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{a30877dc-dd20-4b6c-878b-b8bdcbab33d5}</SharePointProjectItemId>
+      <SharePointProjectItemId>{232396bc-e673-44e1-9147-d56608e2550d}</SharePointProjectItemId>
     </None>
     <None Include="key.snk" />
     <None Include="Lists\MailMessages\MailMessagesInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{d36f1e12-31e7-4c11-9543-65c5d2b0d31e}</SharePointProjectItemId>
+      <SharePointProjectItemId>{0f741328-67b3-4c40-86ad-64fe502b4a3e}</SharePointProjectItemId>
     </None>
     <None Include="Lists\MailMessages\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{6e5ee144-1957-4ac5-aa8e-c1f5cf28e419}</SharePointProjectItemId>
+      <SharePointProjectItemId>{301b2009-84d8-4c9b-a547-125b49f1d271}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\WorkflowHistoryList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fbac86f1-fec3-43e3-a8dc-70b4b7c1bae8}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\WorkflowTaskList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1c7ed3ba-47c4-48c1-b9ed-a60be4ff5272}</SharePointProjectItemId>
+    </None>
+    <None Include="MasterPages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f500aa7e-3f5e-4f80-b284-2200955b42a9}</SharePointProjectItemId>
     </None>
     <None Include="MasterPages\specOpsEvent-seattle.master" />
-    <None Include="MasterPages\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{feefb8bc-9bab-4433-a470-f1163049d97f}</SharePointProjectItemId>
-    </None>
     <None Include="Package\Package.package">
-      <PackageId>{f265e077-1ed3-44f3-9f6c-a56a4b2ad14b}</PackageId>
+      <PackageId>{70e2c124-db1a-48e8-a228-cdd004b0d321}</PackageId>
     </None>
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
+    <None Include="SendMailMessage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{508fa7ad-c642-4591-bb4f-cce37404985c}</SharePointProjectItemId>
+    </None>
     <None Include="SpreadsheetsForExcelWebParts\AirMissionTracker.xlsx" />
     <None Include="SpreadsheetsForExcelWebParts\CombatPowerContract.xlsx" />
     <None Include="SpreadsheetsForExcelWebParts\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{27b17f97-7ecc-4e69-b61e-cbd024a4e2f8}</SharePointProjectItemId>
+      <SharePointProjectItemId>{48c6cb1b-19b6-4892-93f4-08fc0ab8e55f}</SharePointProjectItemId>
     </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <XamlAppDef Include="SendMailMessage\Workflow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </XamlAppDef>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Application\WebPageAssets\css\font-awesome-4.2.0\css\font-awesome.css" />
@@ -274,16 +279,16 @@
     <Content Include="Application\WebPartPages\announce.aspx" />
     <Content Include="Application\WebPartPages\asr.aspx" />
     <Content Include="Application\WebPartPages\comms.aspx" />
-    <Content Include="Application\WebPartPages\editExerciseNav.aspx" />
-    <Content Include="Application\WebPartPages\projectionScrollable.aspx" />
     <Content Include="Application\WebPartPages\cub.aspx" />
     <Content Include="Application\WebPartPages\editCustomNav.aspx" />
+    <Content Include="Application\WebPartPages\editExerciseNav.aspx" />
     <Content Include="Application\WebPartPages\Elements.xml" />
-    <Content Include="Application\WebPartPages\excon.aspx" />
     <Content Include="Application\WebPartPages\evDoc.aspx" />
+    <Content Include="Application\WebPartPages\excon.aspx" />
     <Content Include="Application\WebPartPages\helpDesk.aspx" />
     <Content Include="Application\WebPartPages\missionTracker.aspx" />
     <Content Include="Application\WebPartPages\phone.aspx" />
+    <Content Include="Application\WebPartPages\projectionScrollable.aspx" />
     <Content Include="Application\WebPartPages\rfi.aspx" />
     <Content Include="Application\WebPartPages\sitreps.aspx" />
     <Content Include="Application\WebPartPages\soatg.aspx" />
@@ -300,8 +305,11 @@
     <Content Include="CustomListForms\CustomFormsForRFI\Elements.xml" />
     <Content Include="CustomListForms\CustomFormsForRFI\respond.aspx" />
     <Content Include="CustomListForms\CustomFormsForRFI\sufficient.aspx" />
-    <Content Include="Features\FrontEnd\FrontEnd.Template.xml">
-      <DependentUpon>FrontEnd.feature</DependentUpon>
+    <Content Include="Features\Pages\Pages.Template.xml">
+      <DependentUpon>Pages.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\MailMessaging\MailMessaging.Template.xml">
+      <DependentUpon>MailMessaging.feature</DependentUpon>
     </Content>
     <Content Include="ItemEventReceivers\DocumentEventReceiver\Elements.xml" />
     <Content Include="ItemEventReceivers\HelpDeskTicketEventReceiver\Elements.xml" />
@@ -309,28 +317,11 @@
     <Content Include="Lists\MailMessages\Elements.xml" />
     <Content Include="Lists\MailMessages\MailMessagesInstance\Elements.xml" />
     <Content Include="Lists\MailMessages\Schema.xml" />
+    <Content Include="Lists\WorkflowHistoryList\Elements.xml" />
+    <Content Include="Lists\WorkflowTaskList\Elements.xml" />
     <Content Include="MasterPages\Elements.xml" />
+    <Content Include="SendMailMessage\Elements.xml" />
     <Content Include="SpreadsheetsForExcelWebParts\Elements.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Workflows\" />
-  </ItemGroup>
-  <ItemGroup>
-    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
-      <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

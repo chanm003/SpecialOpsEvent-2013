@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="f265e077-1ed3-44f3-9f6c-a56a4b2ad14b" SharePointProductVersion="15.0">
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="70e2c124-db1a-48e8-a228-cdd004b0d321" SharePointProductVersion="15.0">
   <Assemblies>
     <Assembly Location="SpecialOpsEventPages.dll" DeploymentTarget="GlobalAssemblyCache" />
   </Assemblies>
   <FeatureManifests>
-    <FeatureManifest Location="SpecialOpsEventPages_FrontEnd\Feature.xml" />
+    <FeatureManifest Location="SpecialOpsEventPages_Pages\Feature.xml" />
+    <FeatureManifest Location="SpecialOpsEventPages_MailMessaging\Feature.xml" />
   </FeatureManifests>
 </Solution>

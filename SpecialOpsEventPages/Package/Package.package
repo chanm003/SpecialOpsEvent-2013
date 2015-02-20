@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="f265e077-1ed3-44f3-9f6c-a56a4b2ad14b" solutionId="f265e077-1ed3-44f3-9f6c-a56a4b2ad14b" resetWebServer="false" sharePointProductVersion="15.0" name="SpecialOpsEventPages" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="70e2c124-db1a-48e8-a228-cdd004b0d321" solutionId="70e2c124-db1a-48e8-a228-cdd004b0d321" resetWebServer="false" sharePointProductVersion="15.0" name="SpecialOpsEventPages" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
   <features>
-    <featureReference itemId="1ffb6c44-a2c8-42b4-ba66-c409f8306f98" />
+    <featureReference itemId="9431acb6-3600-4ac4-8962-bd02f65a269a" />
+    <featureReference itemId="84311208-4761-43c4-829c-990bbf85aeed" />
   </features>
 </package>

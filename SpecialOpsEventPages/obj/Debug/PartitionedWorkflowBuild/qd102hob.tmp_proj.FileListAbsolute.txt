@@ -1,0 +1,16 @@
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\bin\Debug\PartitionedWorkflowBuild\SpecialOpsEventPages.dll
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\bin\Debug\PartitionedWorkflowBuild\SpecialOpsEventPages.pdb
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\bin\Debug\PartitionedWorkflowBuild\Microsoft.SharePoint.DesignTime.Activities.dll
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\bin\Debug\PartitionedWorkflowBuild\Newtonsoft.Json.dll
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\obj\Debug\PartitionedWorkflowBuild\Workflow.g.xaml
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\obj\Debug\PartitionedWorkflowBuild\SpecialOpsEventPages.SendMailMessage_Workflow_BeforeInitializeComponentHelper.txt
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\obj\Debug\PartitionedWorkflowBuild\_SpecialOpsEventPages.g.cs
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\obj\Debug\PartitionedWorkflowBuild\Workflow.g.cs
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\obj\Debug\PartitionedWorkflowBuild\SpecialOpsEventPages.SendMailMessage_Workflow_BeforeInitializeComponentHelper.cs
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\obj\Debug\PartitionedWorkflowBuild\_AssemblyInfo_0bf26e269d4b445980f712620c6b0662.g.cs
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\obj\Debug\PartitionedWorkflowBuild\qd102hob.tmp_proj.XamlGeneratedCodeFileListAbsolute.txt
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\obj\Debug\PartitionedWorkflowBuild\qd102hob.tmp_proj.XamlGeneratedXamlFileListAbsolute.txt
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\obj\Debug\PartitionedWorkflowBuild\SpecialOpsEventPages.dll
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\obj\Debug\PartitionedWorkflowBuild\SpecialOpsEventPages.pdb
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\obj\Debug\PartitionedWorkflowBuild\SpecialOpsEventPages.SendMailMessage_Workflow_CompiledExpressionRoot.cs
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\obj\Debug\PartitionedWorkflowBuild\AC2C1ABA-CCF6-44D4-8127-588FD4D0A860-DeferredValidationErrors.xml

@@ -1,0 +1,5 @@
+obj\Debug\PartitionedWorkflowBuild\_SpecialOpsEventPages.g.cs
+obj\Debug\PartitionedWorkflowBuild\Workflow.g.cs
+obj\Debug\PartitionedWorkflowBuild\SpecialOpsEventPages.SendMailMessage_Workflow_BeforeInitializeComponentHelper.cs
+obj\Debug\PartitionedWorkflowBuild\_AssemblyInfo_0bf26e269d4b445980f712620c6b0662.g.cs
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\obj\Debug\PartitionedWorkflowBuild\SpecialOpsEventPages.SendMailMessage_Workflow_CompiledExpressionRoot.cs
