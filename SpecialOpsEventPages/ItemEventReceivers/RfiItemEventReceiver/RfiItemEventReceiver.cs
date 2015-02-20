@@ -62,7 +62,7 @@ namespace SpecialOpsEventPages.ItemEventReceivers.RfiItemEventReceiver
             msg += "<br/><b>ID:</b> " + rfiItem["ID"];
             msg += "<br/><b>Priority:</b> " + rfiItem["Priority"];
             msg += "<br/><b>Recommended OPR:</b> " + rfiItem["RecommendedOPR"];
-            msg += "<br/><b>Why Insufficient:</b> " + properties.AfterProperties["InsufficientExplanation"];
+            //msg += "<br/><b>Why Insufficient:</b> " + properties.AfterProperties["InsufficientExplanation"];
 
             msg += "<br/><br/><a href='" + currentItemUrl + "'>Click here to view the RFI</a>";
 
@@ -119,7 +119,7 @@ namespace SpecialOpsEventPages.ItemEventReceivers.RfiItemEventReceiver
             msg += "<br/><b>ID:</b> " + rfiItem["ID"];
             msg += "<br/><b>Priority:</b> " + rfiItem["Priority"];
             msg += "<br/><b>Recommended OPR:</b> " + rfiItem["RecommendedOPR"];
-            msg += "<br/><b>Details:</b> " + rfiItem["Details"];
+            //msg += "<br/><b>Details:</b> " + rfiItem["Details"];
             msg += "<br/><br/><a href='" + currentItemUrl + "'>Click here to review the information provided</a>";
 
             utility.AddItemToMailMessages(properties.Web, to, cc, subject, msg);
@@ -158,13 +158,13 @@ namespace SpecialOpsEventPages.ItemEventReceivers.RfiItemEventReceiver
 
             var dispFormUrl = rfiItem.ParentList.ParentWeb.Site.MakeFullUrl(rfiItem.ParentList.DefaultDisplayFormUrl);
             var currentItemUrl = dispFormUrl + "?ID=" + rfiItem["ID"];
-            var subject = "Your RFI: " + rfiItem["Title"];
+            var subject = "RFI Created: " + rfiItem["Title"];
             var msg = "";
             msg += "<b>Title:</b> " + rfiItem["Title"];
             msg += "<br/><b>ID:</b> " + rfiItem["ID"];
             msg += "<br/><b>Priority:</b> " + rfiItem["Priority"];
             msg += "<br/><b>Recommended OPR:</b> " + rfiItem["RecommendedOPR"];
-            msg += "<br/><b>Details:</b> " + rfiItem["Details"];
+           // msg += "<br/><b>Details:</b> " + rfiItem["Details"];
             msg += "<br/><br/><a href='" + currentItemUrl + "'>Click here to view the RFI</a>";
 
             utility.AddItemToMailMessages(properties.Web, to, cc, subject, msg);

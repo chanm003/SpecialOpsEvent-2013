@@ -406,7 +406,7 @@
                 ows_LTIOV: { mappedName: "ltiov", objectType: "DateTime" },
                 ows_RfiTracking: { mappedName: "rfiTracking", objectType: "Integer" },
                 ows_Priority: { mappedName: "priority", objectType: "Text" },
-                ows_DateOpened: { mappedName: "dateOpened", objectType: "DateTime" }
+                ows_DateOpened: { mappedName: "dateOpened", objectType: "Text" }
             }
         },
         watchlog: {
@@ -1034,7 +1034,7 @@
 
             json = _.map(json, function (item) {
                 item.ltiov = moment(item.ltiov);
-                item.dateOpened = moment(item.dateOpened);
+                item.dateOpened = moment(item.dateOpened.split('#')[1]);
                 return item;
             });
 

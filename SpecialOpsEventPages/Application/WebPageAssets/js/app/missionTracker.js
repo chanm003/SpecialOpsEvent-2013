@@ -143,7 +143,7 @@
 
 
             if (chopForm) {
-                userProfileUrl = _spPageContextInfo.webServerRelativeUrl + "/_layouts/userdisp.aspx?ID=" + chopForm.editor.userId;
+                userProfileUrl = _spPageContextInfo.webServerRelativeUrl + "/_layouts/15/userdisp.aspx?ID=" + chopForm.editor.userId;
 
                 if (chopForm.verdict === "Approved") {
                     faIcon = '<i style="color:green;" class="fa fa-thumbs-up fa-lg"></i> ';
@@ -317,7 +317,7 @@
             render: function (editor, type, row) {
                 var html = "";
 
-                var url = _spPageContextInfo.webServerRelativeUrl + "/_layouts/userdisp.aspx?ID=" + editor.userId;
+                var url = _spPageContextInfo.webServerRelativeUrl + "/_layouts/15/userdisp.aspx?ID=" + editor.userId;
                 html = "<a title='View Profile for " + editor.userName + "' href='" + url + "'>" + editor.userName + "</a>";
 
                 return html;
@@ -388,9 +388,10 @@
 
         var linkColumDef = {
             render: function (item, type, row) {
-                var html = "";
+                var html = "",
+                    url = item.dispFormUrl + "&Source=" + document.location.href;
 
-                html = "<a title='Details: " + item.title + "' class='showSharePointModal' href='" + item.dispFormUrl + "&IsDlg=1'>" + item.title + "</a>";
+                html = "<a title='Details: " + item.title + "' href='" + url + "'>" + item.title + "</a>";
 
                 return html;
             },

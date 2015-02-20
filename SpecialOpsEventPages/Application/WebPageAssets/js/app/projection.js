@@ -130,8 +130,8 @@
             return strArr;
         });
 
-        commonUI.renderWebPartHeaderTag(container, requirejs.spWebURL + "/Lists/ExerciseCalendar", "Battle Rhythm (Next 24 Hours)");
-        container.append($("<table id='tblBattleRhythm' cellpadding='0' cellspacing='0' border='0' class='hover row-border' width='100%'></table>"));
+        commonUI.renderWebPartHeaderTag(container, "/Lists/EventCalendar", "Battle Rhythm (Next 24 Hours)");
+        container.append($("<table id='tblBattleRhythm' cellpadding='0' cellspacing='0' border='0' class='hover cell-border' width='100%'></table>"));
 
         $("#tblBattleRhythm").dataTable({
             paging: false,
@@ -189,8 +189,8 @@
             return strArr;
         });
 
-        commonUI.renderWebPartHeaderTag(container, requirejs.spWebURL + "/Lists/CCIR", "CCIR");
-        container.append($("<table id='tblCCIR' cellpadding='0' cellspacing='0' border='0' class='hover row-border' width='100%'></table>"));
+        commonUI.renderWebPartHeaderTag(container, "/Lists/CCIR", "CCIR");
+        container.append($("<table id='tblCCIR' cellpadding='0' cellspacing='0' border='0' class='hover cell-border' width='100%'></table>"));
 
 
         $("#tblCCIR").dataTable({
@@ -226,8 +226,8 @@
             return strArr;
         });
 
-        commonUI.renderWebPartHeaderTag(container, requirejs.spWebURL + "/Lists/MessageTraffic", headingName);
-        container.append($("<table id='" + tableID + "' cellpadding='0' cellspacing='0' border='0' class='hover row-border' width='100%'></table>"));
+        commonUI.renderWebPartHeaderTag(container, "/Lists/MessageTraffic", headingName);
+        container.append($("<table id='" + tableID + "' cellpadding='0' cellspacing='0' border='0' class='hover cell-border' width='100%'></table>"));
 
 
         $("#" + tableID).dataTable({
@@ -273,8 +273,8 @@
             return strArr;
         });
 
-        commonUI.renderWebPartHeaderTag(container, requirejs.spWebURL + "/Lists/MissionTracker", "Mission Tracker");
-        container.append($("<table id='tblMissionTracker' cellpadding='0' cellspacing='0' border='0' class='hover row-border' width='100%'></table>"));
+        commonUI.renderWebPartHeaderTag(container, "/Lists/MissionTracker", "Mission Tracker");
+        container.append($("<table id='tblMissionTracker' cellpadding='0' cellspacing='0' border='0' class='hover cell-border' width='100%'></table>"));
 
 
         $("#tblMissionTracker").dataTable({
@@ -316,8 +316,8 @@
             return strArr;
         });
 
-        commonUI.renderWebPartHeaderTag(container, requirejs.spWebURL + "/Lists/RFI", "Open Collection Requirements");
-        container.append($("<table id='tblRfi' cellpadding='0' cellspacing='0' border='0' class='hover row-border' width='100%'></table>"));
+        commonUI.renderWebPartHeaderTag(container, "/Lists/RFI", "Open Collection Requirements");
+        container.append($("<table id='tblRfi' cellpadding='0' cellspacing='0' border='0' class='hover cell-border' width='100%'></table>"));
 
 
         $("#tblRfi").dataTable({
@@ -355,8 +355,8 @@
             return strArr;
         });
 
-        commonUI.renderWebPartHeaderTag(container, requirejs.spWebURL + "/Lists/WatchLogSocc", "Watch Log");
-        container.append($("<table id='tblWatchLog' cellpadding='0' cellspacing='0' border='0' class='hover row-border' width='100%'></table>"));
+        commonUI.renderWebPartHeaderTag(container, "/Lists/WatchLogSocc", "Watch Log");
+        container.append($("<table id='tblWatchLog' cellpadding='0' cellspacing='0' border='0' class='hover cell-border' width='100%'></table>"));
 
 
         $("#tblWatchLog").dataTable({
