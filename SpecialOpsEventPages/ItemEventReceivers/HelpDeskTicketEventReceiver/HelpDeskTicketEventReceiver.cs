@@ -49,12 +49,11 @@ namespace SpecialOpsEventPages.ItemEventReceivers.HelpDeskTicketEventReceiver
             var to = new List<SPPrincipal> { customerValue.User };
             var cc = new List<SPPrincipal>();
 
-            var dispFormUrl = ticket.ParentList.ParentWeb.Site.MakeFullUrl(ticket.ParentList.DefaultDisplayFormUrl);
-            var currentItemUrl = dispFormUrl + "?ID=" + ticket["ID"];
+            var currentItemUrl = ticket.Web.Url + "/Lists/HelpDesk/DispForm.aspx?ID=" + ticket["ID"];
             var subject = "Your request has been resolved";
             var msg = "";
             msg += "<b>Title:</b> " + ticket["Title"];
-            msg += "<br/><br/><a href='" + currentItemUrl + "'>Click here to view your request</a>";
+            msg += "<br/><br/>Click here to review your request:<br/>" + currentItemUrl;
            
             utility.AddItemToMailMessages(properties.Web, to, cc, subject, msg);
         }
@@ -73,12 +72,11 @@ namespace SpecialOpsEventPages.ItemEventReceivers.HelpDeskTicketEventReceiver
             var to = new List<SPPrincipal> { customerValue.User };
             var cc = new List<SPPrincipal>();
 
-            var dispFormUrl = ticket.ParentList.ParentWeb.Site.MakeFullUrl(ticket.ParentList.DefaultDisplayFormUrl);
-            var currentItemUrl = dispFormUrl + "?ID=" + ticket["ID"];
+            var currentItemUrl = ticket.Web.Url + "/Lists/HelpDesk/DispForm.aspx?ID=" + ticket["ID"];
             var subject = "Your Help Desk request has been submitted";
             var msg = "";
             msg += "<b>Title:</b> " + ticket["Title"];
-            msg += "<br/><br/><a href='" + currentItemUrl + "'>Click here to view your request</a>";
+            msg += "<br/><br/>Click here to view the RFI:<br/>" + currentItemUrl;
 
             utility.AddItemToMailMessages(properties.Web, to, cc, subject, msg);
         }

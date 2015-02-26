@@ -13,9 +13,7 @@ namespace SpecialOpsEventPages.ItemEventReceivers.RfiItemEventReceiver
     /// </summary>
     public class RfiItemEventReceiver : SPItemEventReceiver
     {
-        /// <summary>
-        /// An item is being updated.
-        /// </summary>
+
         public override void ItemUpdating(SPItemEventProperties properties)
         {
             base.ItemUpdating(properties);
@@ -54,8 +52,7 @@ namespace SpecialOpsEventPages.ItemEventReceivers.RfiItemEventReceiver
             var to = new List<SPPrincipal> { respondentValue.User };
             var cc = new List<SPPrincipal>();
 
-            var dispFormUrl = rfiItem.ParentList.ParentWeb.Site.MakeFullUrl(rfiItem.ParentList.DefaultDisplayFormUrl);
-            var currentItemUrl = dispFormUrl + "?ID=" + rfiItem["ID"];
+            var currentItemUrl = rfiItem.Web.Url + "/Lists/RFI/DispForm.aspx?ID=" + rfiItem["ID"];
             var subject = "RFI Reopened: " + rfiItem["Title"];
             var msg = "";
             msg += "<b>Title:</b> " + rfiItem["Title"];
@@ -64,7 +61,7 @@ namespace SpecialOpsEventPages.ItemEventReceivers.RfiItemEventReceiver
             msg += "<br/><b>Recommended OPR:</b> " + rfiItem["RecommendedOPR"];
             //msg += "<br/><b>Why Insufficient:</b> " + properties.AfterProperties["InsufficientExplanation"];
 
-            msg += "<br/><br/><a href='" + currentItemUrl + "'>Click here to view the RFI</a>";
+            msg += "<br/><br/>Click here to view the RFI:<br/>" + currentItemUrl;
 
             utility.AddItemToMailMessages(properties.Web, to, cc, subject, msg);
         }
@@ -111,8 +108,7 @@ namespace SpecialOpsEventPages.ItemEventReceivers.RfiItemEventReceiver
             var to = new List<SPPrincipal> { pocValue.User };
             var cc = new List<SPPrincipal>();
 
-            var dispFormUrl = rfiItem.ParentList.ParentWeb.Site.MakeFullUrl(rfiItem.ParentList.DefaultDisplayFormUrl);
-            var currentItemUrl = dispFormUrl + "?ID=" + rfiItem["ID"];
+            var currentItemUrl = rfiItem.Web.Url + "/Lists/RFI/DispForm.aspx?ID=" + rfiItem["ID"];
             var subject = "RFI Closed: " + rfiItem["Title"];
             var msg = "";
             msg += "<b>Title:</b> " + rfiItem["Title"];
@@ -120,7 +116,7 @@ namespace SpecialOpsEventPages.ItemEventReceivers.RfiItemEventReceiver
             msg += "<br/><b>Priority:</b> " + rfiItem["Priority"];
             msg += "<br/><b>Recommended OPR:</b> " + rfiItem["RecommendedOPR"];
             //msg += "<br/><b>Details:</b> " + rfiItem["Details"];
-            msg += "<br/><br/><a href='" + currentItemUrl + "'>Click here to review the information provided</a>";
+            msg += "<br/><br/>Click here to review the information provided:<br/>" + currentItemUrl;
 
             utility.AddItemToMailMessages(properties.Web, to, cc, subject, msg);
         }
@@ -156,8 +152,7 @@ namespace SpecialOpsEventPages.ItemEventReceivers.RfiItemEventReceiver
             var to = new List<SPPrincipal> { pocValue.User };
             var cc = new List<SPPrincipal>();
 
-            var dispFormUrl = rfiItem.ParentList.ParentWeb.Site.MakeFullUrl(rfiItem.ParentList.DefaultDisplayFormUrl);
-            var currentItemUrl = dispFormUrl + "?ID=" + rfiItem["ID"];
+            var currentItemUrl = rfiItem.Web.Url + "/Lists/RFI/DispForm.aspx?ID=" + rfiItem["ID"];
             var subject = "RFI Created: " + rfiItem["Title"];
             var msg = "";
             msg += "<b>Title:</b> " + rfiItem["Title"];
@@ -165,7 +160,7 @@ namespace SpecialOpsEventPages.ItemEventReceivers.RfiItemEventReceiver
             msg += "<br/><b>Priority:</b> " + rfiItem["Priority"];
             msg += "<br/><b>Recommended OPR:</b> " + rfiItem["RecommendedOPR"];
            // msg += "<br/><b>Details:</b> " + rfiItem["Details"];
-            msg += "<br/><br/><a href='" + currentItemUrl + "'>Click here to view the RFI</a>";
+            msg += "<br/><br/>Click here to view the RFI:<br/>" + currentItemUrl;
 
             utility.AddItemToMailMessages(properties.Web, to, cc, subject, msg);
         }

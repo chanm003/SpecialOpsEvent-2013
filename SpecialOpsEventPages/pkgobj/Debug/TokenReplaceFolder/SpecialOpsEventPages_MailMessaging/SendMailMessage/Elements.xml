@@ -16,7 +16,7 @@
       <Property Name="RestrictToScope" Value="{$ListId:Lists/MailMessages;}" />
     </File>
     <File Url="ItemAddedAssociation" Path="SendMailMessage\ItemAddedAssociation" Type="GhostableInLibrary">
-      <Property Name="WSDisplayName" Value="SendMailMessage - Item Added" />
+      <Property Name="WSDisplayName" Value="Send Mail Message whenever Item Added" />
       <Property Name="ContentType" Value="WorkflowServiceSubscription" />
       <Property Name="WSPublishState" Value="3" />
       <Property Name="WSEventType" Value="ItemAdded" />
