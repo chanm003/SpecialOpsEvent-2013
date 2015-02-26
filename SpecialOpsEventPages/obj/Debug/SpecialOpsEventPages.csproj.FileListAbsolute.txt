@@ -18,9 +18,9 @@ C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\obj\Debug\PartitionedWorkflo
 C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\obj\Debug\PartitionedWorkflowBuild\Workflow.g.cs
 C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\obj\Debug\PartitionedWorkflowBuild\Workflow.g.xaml
 C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\obj\Debug\PartitionedWorkflowBuild\_SpecialOpsEventPages.g.cs
-C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\bin\Debug\TranslatedWorkflows\3yeysgy3.1c4.xaml
-C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\obj\Debug\PartitionedWorkflowBuild\z1yvjc2j.tmp_proj.FileListAbsolute.txt
-C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\obj\Debug\PartitionedWorkflowBuild\z1yvjc2j.tmp_proj.XamlGeneratedCodeFileListAbsolute.txt
-C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\obj\Debug\PartitionedWorkflowBuild\z1yvjc2j.tmp_proj.XamlGeneratedXamlFileListAbsolute.txt
-C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\obj\Debug\PartitionedWorkflowBuild\z1yvjc2j.tmp_proj.XamlPass2Flag.txt
-C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\obj\Debug\PartitionedWorkflowBuild\_AssemblyInfo_3a786b4a9be54e9cacbe80cb1686b45c.g.cs
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\bin\Debug\TranslatedWorkflows\fh22njas.sgw.xaml
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\obj\Debug\PartitionedWorkflowBuild\4jjk0enp.tmp_proj.FileListAbsolute.txt
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\obj\Debug\PartitionedWorkflowBuild\4jjk0enp.tmp_proj.XamlGeneratedCodeFileListAbsolute.txt
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\obj\Debug\PartitionedWorkflowBuild\4jjk0enp.tmp_proj.XamlGeneratedXamlFileListAbsolute.txt
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\obj\Debug\PartitionedWorkflowBuild\4jjk0enp.tmp_proj.XamlPass2Flag.txt
+C:\SP2013\SpecialOpsEvent-2013\SpecialOpsEventPages\obj\Debug\PartitionedWorkflowBuild\_AssemblyInfo_048b7059629e410681f5866e4635c416.g.cs

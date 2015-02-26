@@ -2,7 +2,7 @@
 <List xmlns:ows="Microsoft SharePoint" Title="AfterActionReports" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/AfterActionReports" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
   <MetaData>
     <ContentTypes>
-      <ContentType ID="0x0100e52cd7e87c4541f3bf48c58ad1559710" Name="Item">
+      <ContentType ID="0x0100e52cd7e87c4541f3bf48c58ad1559710" Name="Item" Inherits="TRUE">
         <FieldRefs>
           <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
           <FieldRef ID="{65af8f98-488a-49a3-a552-3b33a06a7342}" Name="ObservationDate" />

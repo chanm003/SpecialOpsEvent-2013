@@ -2,7 +2,7 @@
 <List xmlns:ows="Microsoft SharePoint" Title="EventDocuments" Direction="$Resources:Direction;" Url="EventDocuments" BaseType="1" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
   <MetaData>
     <ContentTypes>
-      <ContentType  ID="0x0101" Name="Document" Group="Custom Content Types" Description="Create a new document."  Inherits="FALSE" Version="0">
+      <ContentType  ID="0x0101" Name="Document" Group="Custom Content Types" Description="Create a new document."  Inherits="TRUE" Version="0">
         <Folder TargetName="Forms/Document" />
         <FieldRefs>
           <FieldRef ID="{8553196d-ec8d-4564-9861-3dbe931050c8}" Name="FileLeafRef" Required="TRUE" />

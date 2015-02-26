@@ -2,7 +2,7 @@
 <List xmlns:ows="Microsoft SharePoint" Title="HelpDesk" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/HelpDesk" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
   <MetaData>
     <ContentTypes>
-      <ContentType ID="0x01004a680f084e14416ab55212240cef5018" Name="Item">
+      <ContentType ID="0x01004a680f084e14416ab55212240cef5018" Name="Item" Inherits="TRUE">
         <FieldRefs>
           <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
           <FieldRef ID="{748a4048-1c41-4d40-b2d6-602e31531ff0}" Name="Details" />

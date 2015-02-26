@@ -16,7 +16,7 @@
 
 #exerciseSiteMenu ul li {
     position: relative;
-     z-index: 1000 !important;
+     z-index: 49 !important; /*SharePoint menus have z-index of 50*/
 }
 
 

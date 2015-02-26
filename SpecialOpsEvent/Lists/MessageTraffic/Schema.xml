@@ -2,7 +2,8 @@
 <List xmlns:ows="Microsoft SharePoint" Title="MessageTraffic" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/MessageTraffic" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
   <MetaData>
     <ContentTypes>
-      <ContentType ID="0x0100fb1f6f5c684c48dda629a8fb9009ccc2" Name="Item">
+      <ContentType ID="0x0100fb1f6f5c684c48dda629a8fb9009ccc2" Name="Item"
+                   Inherits="TRUE">
         <FieldRefs>
           <FieldRef ID="{d1de11a6-3e26-4cfc-969c-50922c147464}" Name="DtgOrgTitle" />
           <FieldRef ID="{cd688cc0-a838-4cad-bf07-66986aed7bf2}" Name="DateTimeGroup" />

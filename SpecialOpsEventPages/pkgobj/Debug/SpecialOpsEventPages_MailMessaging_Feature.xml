@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="e1446db2-2e36-458a-b425-d53571e81b76" ReceiverAssembly="Microsoft.SharePoint.WorkflowServices, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" ReceiverClass="Microsoft.SharePoint.WorkflowServices.SPWorkflowPackageFeatureReceiver" Scope="Web" Title="Special Operations Event - Mail">
+  <ActivationDependencies>
+    <ActivationDependency FeatureId="f4db1733-f952-49e1-b207-dc0527391def" FeatureTitle="Special Operations Event - Pages" />
+  </ActivationDependencies>
   <ElementManifests>
     <ElementManifest Location="SendMailMessage\Elements.xml" />
     <ElementFile Location="SendMailMessage\Workflow.xaml" />

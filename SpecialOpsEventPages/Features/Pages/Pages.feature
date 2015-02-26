@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="f4db1733-f952-49e1-b207-dc0527391def" featureId="f4db1733-f952-49e1-b207-dc0527391def" imageUrl="" receiverAssembly="$SharePoint.Project.AssemblyFullName$" receiverClass="$SharePoint.Type.bb5488d7-ba51-45f3-83fc-1767fa16d36c.FullName$" solutionId="00000000-0000-0000-0000-000000000000" title="Special Operations Event - Pages" version="" deploymentPath="$SharePoint.Project.FileNameWithoutExtension$_$SharePoint.Feature.FileNameWithoutExtension$" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/FeatureModel">
+  <activationDependencies>
+    <referencedFeatureActivationDependency minimumVersion="" itemId="4369ad99-5f81-42e9-823a-ea5895c19512" projectPath="..\SpecialOpsEvent\SpecialOpsEvent.csproj" />
+  </activationDependencies>
   <projectItems>
     <projectItemReference itemId="301b2009-84d8-4c9b-a547-125b49f1d271" />
     <projectItemReference itemId="0f741328-67b3-4c40-86ad-64fe502b4a3e" />

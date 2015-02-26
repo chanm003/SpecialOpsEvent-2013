@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="f4db1733-f952-49e1-b207-dc0527391def" ReceiverAssembly="SpecialOpsEventPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c29d15cd69f463af" ReceiverClass="SpecialOpsEventPages.Features.Pages.PagesEventReceiver" Scope="Web" Title="Special Operations Event - Pages">
+  <ActivationDependencies>
+    <ActivationDependency FeatureId="0ffc1eba-d4c3-48f4-89b7-08c1663e4668" FeatureTitle="Special Operations Event - Schema" />
+  </ActivationDependencies>
   <ElementManifests>
     <ElementManifest Location="MailMessages\Elements.xml" />
     <ElementFile Location="MailMessages\Schema.xml" />

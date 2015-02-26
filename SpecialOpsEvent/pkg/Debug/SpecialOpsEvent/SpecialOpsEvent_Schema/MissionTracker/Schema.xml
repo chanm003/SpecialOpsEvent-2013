@@ -2,7 +2,7 @@
 <List xmlns:ows="Microsoft SharePoint" Title="MissionTracker" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/MissionTracker" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
   <MetaData>
     <ContentTypes>
-      <ContentType ID="0x010028feced43e4a413c8488327a0e2c597f" Name="Item">
+      <ContentType ID="0x010028feced43e4a413c8488327a0e2c597f" Name="Item" Inherits="TRUE">
         <FieldRefs>
           <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
           <FieldRef ID="{38e5cc16-2325-4a18-addc-18a7d3c7fd35}" Name="MissionNumber" />

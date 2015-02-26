@@ -2,7 +2,8 @@
 <List VersioningEnabled="TRUE" xmlns:ows="Microsoft SharePoint" Title="RFI" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/RFI" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
   <MetaData>
     <ContentTypes>
-      <ContentType ID="0x01009e3ea998c0b945928fdb4a6ae073da67" Name="Item">
+      <ContentType ID="0x01009e3ea998c0b945928fdb4a6ae073da67" Name="Item"
+                   Inherits="TRUE">
         <FieldRefs>
           <FieldRef ID="{9D1133B1-E379-44D6-B7EF-9A7F3886526F}" Name="RfiTracking" />
           <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />

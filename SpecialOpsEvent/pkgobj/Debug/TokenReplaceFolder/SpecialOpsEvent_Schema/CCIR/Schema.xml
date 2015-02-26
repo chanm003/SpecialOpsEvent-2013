@@ -2,7 +2,7 @@
 <List xmlns:ows="Microsoft SharePoint" Title="CCIR" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/CCIR" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
   <MetaData>
     <ContentTypes>
-      <ContentType ID="0x0100c06876b0ca6241fe9177c19968756e73" Name="Item">
+      <ContentType ID="0x0100c06876b0ca6241fe9177c19968756e73" Name="Item" Inherits="TRUE">
         <FieldRefs>
           <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
           <FieldRef ID="{e897c40f-e911-4193-86cf-0e19c1948216}" Name="CCIRCategory" />

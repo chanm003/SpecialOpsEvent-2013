@@ -2,7 +2,8 @@
 <List xmlns:ows="Microsoft SharePoint" Title="MSEL" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/MSEL" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
   <MetaData>
     <ContentTypes>
-      <ContentType ID="0x01002c4d2f6a5c2040b28cb3396bb12ed3d7" Name="Item">
+      <ContentType ID="0x01002c4d2f6a5c2040b28cb3396bb12ed3d7" Name="Item"
+                   Inherits="TRUE">
         <FieldRefs>
           <FieldRef ID="{6008446b-af6f-4b1f-9fa7-dd3d453e7745}" Name="DTG" />
           <FieldRef ID="{80101cde-1a20-4366-8e01-2ff4792f464e}" Name="DateTimeGroup" />

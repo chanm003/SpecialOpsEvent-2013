@@ -2,7 +2,7 @@
 <List xmlns:ows="Microsoft SharePoint" Title="AirSupportReq" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/AirSupportReq" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
   <MetaData>
     <ContentTypes>
-      <ContentType ID="0x01009133ce2f4d01432ea0b0c544b2da233f" Name="Item">
+      <ContentType ID="0x01009133ce2f4d01432ea0b0c544b2da233f" Name="Item" Inherits="TRUE">
         <FieldRefs>
           <FieldRef ID="{56ae3261-0d3d-4e0c-b067-416736c28591}" Name="MissionStartDate" />
           <FieldRef ID="{98dcf62e-0453-49c3-b585-527eac9cbdc7}" Name="MissionEndDate" />

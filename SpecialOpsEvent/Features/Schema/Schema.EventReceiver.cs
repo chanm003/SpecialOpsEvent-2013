@@ -18,6 +18,24 @@ namespace SpecialOpsEvent.Features.Schema
     public class SchemaEventReceiver : SPFeatureReceiver
     {
         private Dictionary<string, List<string>> orgsForComponent = new Dictionary<string, List<string>>() { 
+            {"ALL", new List<string> { 
+                "EXCON-Embassy",
+                "EXCON-Higher Headquarters",
+                "SOATG",
+                "SOCC-SIGCEN",
+                "SOCC-OPCEN - Operations",
+                "SOCC-OPCEN - Intelligence",
+                "SOCC-OPCEN - JPG",
+                "SOCC-SUPCEN - Personnel",
+                "SOCC-SUPCEN - Logistics",
+                "SOCC-Legal",
+                "SOCC-Medical",
+                "SOCC-Public Affairs",
+                "SOTG-15",
+                "SOTG-25",
+                "SOTG-35"
+            }  
+            },
             {"EXCON", new List<string> {"Embassy", "Higher Headquarters"} },
             {"SOATG", new List<string> {"SOATG"} },
             {"SOCC", new List<string> {  
@@ -47,6 +65,12 @@ namespace SpecialOpsEvent.Features.Schema
 
         private void ModifyLibraries(SPWeb web)
         {
+            AddOptionsToChoiceField(web,
+                "Event Documents",
+                "OrganizationalComponent",
+                orgsForComponent["ALL"],
+                "");
+
             AddOptionsToChoiceField(web,
                 "EXCON Documents",
                 "OrganizationalComponent",

@@ -43,7 +43,7 @@
       <Field Type="Text" DisplayName="First Name" Required="FALSE" MaxLength="255" ID="{22c85520-f033-4713-9394-6c1725f69dc1}" Name="First_x0020_Name"/>
       <Field Type="Text" DisplayName="Location" Required="TRUE" MaxLength="255" ID="{758b1982-5407-4eac-b33a-7859745e5570}" Name="Location" />
       <Field Type="Text" DisplayName="Building Number" Required="FALSE" MaxLength="255" ID="{c5a4074f-3c5e-4c11-8f38-3dd322a664a2}" Name="BuildingNumber"/>
-      <Field Type="Lookup" DisplayName="Nation" Required="TRUE" List="Lists/Country" ShowField="Code" UnlimitedLengthInDocumentLibrary="FALSE" RelationshipDeleteBehavior="None" ID="{098a9f29-149a-47fc-b61a-427db1203825}" Name="Nation" Group="" />
+      <Field Type="Lookup" DisplayName="Nation" Required="TRUE" List="Lists/Country" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" RelationshipDeleteBehavior="None" ID="{098a9f29-149a-47fc-b61a-427db1203825}" Name="Nation" Group="" />
       <Field Type="Text" DisplayName="NIPR VOIP" Required="FALSE" MaxLength="255" ID="{A817D11F-C0B7-4E9B-A3A9-58FD9DDA14E6}"  Name="NIPRVOIP" />
       <Field Type="Text" DisplayName="Cell" Required="FALSE" MaxLength="255" ID="{5cd1e678-7041-4917-949e-d47fc42f951c}" Name="Cell" />
       <Field Type="Text" DisplayName="BICES Phone" Required="FALSE" MaxLength="255" ID="{cbbba2cc-1305-49eb-8aaa-f3ce44ac89b6}" Name="BICESPhone" />

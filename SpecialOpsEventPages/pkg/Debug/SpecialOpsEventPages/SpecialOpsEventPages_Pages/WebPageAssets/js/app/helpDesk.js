@@ -73,7 +73,7 @@
             render: function (item, type, row) {
                 var html = "";
 
-                html = "<a title='Details: " + item.title + "' class='showSharePointModal' href='" + item.dispFormUrl + "&IsDlg=1'>" + item.title + "</a>";
+                html = "<a title='Details: " + item.title + "'  href='" + item.dispFormUrl + "'>" + item.title + "</a>";
 
                 return html;
             }
